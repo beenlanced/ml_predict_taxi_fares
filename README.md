@@ -205,7 +205,7 @@ I would like to extend my gratitude to all the individuals and organizations who
 
 Specifically, I would like to acknowledge:
 
-As this work was a project for the [LinkedIn Learning course: Deep Learning and Generative AI with Python: Data Processing and Analytics](https://www.linkedin.com/learning/deep-learning-and-generative-ai-data-prep-analysis-and-visualization-with-python), a shout out to the folks at LinkedIn Learning.
+As this work was a project for the Google `Machine Learning Crash Course`: [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression), a shout out to the folks at Google.
 
 - [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derived my README.md.
 

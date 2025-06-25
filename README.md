@@ -6,9 +6,6 @@
 
 [img source: Chicago Taxi Cabs Guide - Getting Around (Travel Guide) | Episode# 3](https://www.youtube.com/watch?v=-SOfiUWDFsM)
 
-![Code Coverage](https://img.shields.io/badge/coverage-100%25-green)
-[![DL Prediction Tests](https://github.com/beenlanced/dl_predicting_media_channel_sales/actions/workflows/dl_prediction_test.yml/badge.svg)](https://github.com/beenlanced/dl_predicting_media_channel_sales/actions/workflows/dl_prediction_test.yml)
-
 ## Project Description
 
 This project came out of the `Machine Learning Crash Course`: [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression)
@@ -25,8 +22,6 @@ The project:
 - Creates a Deep Learning Keras built neural network to build the prediction model
 - Conducts analysis of the predictive model results
 - Makes any improvements
-- Makes the predicative model accessible via a web application
-- Hosts the web application using the Amazon Web Services - Elastic Cloud Service (AWS-ECS).
 
 ---
 
@@ -34,11 +29,7 @@ The project:
 
 The project contains the key elements:
 
-- `AWS-ECS`, Amazon Web Services - Elastic Cloud Service, runs virtual machine to render the semantic search web application supplied by building a Docker container from a deployed Docker image from Docker hub,
-- `CI/CD` automated pipeline created using `GitHub Actions`,
 - `Deep Learning` for neural networks building,
-- `FastAPI` to render the app,
-- `Functional tests` and `unit tests` using `pytest`,
 - `Git` (version control),
 - `Jupyter` Python coded notebooks,
 - `Keras` to build nodes and layers,
@@ -47,34 +38,24 @@ The project contains the key elements:
 - `Pandas` for dataframe usage,
 - `Plotly` for visualization,
 - `Python` the standard modules,
-- `Pydantic` to define structure of incoming request body and validate input data,
-- `Scikit-Learn` to get training and test datasets,
 - `TensorFlow` to build nodes and layers,
 - `Type` hinting using `Pylance`,
-- `Web application` using `FastAPI`,
 - `uv` package management including use of `ruff` for linting and formatting, and
 - ***
 
 ## Tech Stack
 
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-web-services&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-FF0000?style=for-the-badge&logo=keras&logoColor=white)
-![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white)
 ![Matplotlib](https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff)
 ![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=fff)
 ![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=fff)
 
 ---
 
@@ -131,63 +112,13 @@ use `uv pip install tensorflow`
    uv pip install -r pyproject.toml
    ```
 
-### Running the App
-
-1. **Run the App**
-
-   - Start the project by running the appropriate command at the `src` directory
-     ```
-     uv run fastapi dev app.py
-     ```
-     or if at root level
-     ```
-     uv run fastapi dev src/app.py
-     ```
-     or
-     ```
-     uv uvicorn app:app --reload
-     ```
-
-2. **Access the Project's Web Interface**
-
-   - Open a web browser with the following url.
-     - http://127.0.0.1:8000/
-
-3. **Running the application** by entering the following URL's in a browser
-
-   - The entry API: `http://127.0.0.1:8000/`
-       <p>
-           <img src="./imgs/entry_endpoint.png"/>
-       </p>
-
-     Entry point show that the app is working. A set of default budgets are present, but the user can change these values. To get a prediction of the sales simply press the predict button and the predicted sales value using the Deep Learning prediction model created in this project will be displayed.
-
-   - The Info API: `http://127.0.0.1:8000/info`
-       <p>
-           <img src="./imgs/info_endpoint.png"/>
-       </p>
-
-     Provides overview of the application.
-
-   - The plot-forecast API: `http://127.0.0.1:8000/plot-sales`
-
-       <p>
-           <img src="./imgs/plot_sales_endpoint.png"/>
-       </p>
-
-     Plots the ingested telecommunication sales data at various start dates. This sales data is the target or label data used in the training and testing datasets used to build the prediction model.
+### View Notebooks to see Exploratory Data Analysis and Predicative Model Construction
 
 ---
 
 ## Dataset
 
 The dat used is a subset of data derived from the [City of Chicago Taxi Trips](https://www.google.com/url?q=https%3A%2F%2Fdata.cityofchicago.org%2FTransportation%2FTaxi-Trips%2Fwrvz-psew) dataset.
-
----
-
-## Special Notes
-
-- Note the Docker file here also has to specify Python 3.11 because of the `TensorFlow` restrictions with Python 3.13 as of the time of this project's creation.
 
 ---
 

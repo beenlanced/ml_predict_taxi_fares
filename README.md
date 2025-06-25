@@ -39,9 +39,8 @@ The project contains the key elements:
 - `Plotly` for visualization,
 - `Python` the standard modules,
 - `TensorFlow` to build nodes and layers,
-- `Type` hinting using `Pylance`,
-- `uv` package management including use of `ruff` for linting and formatting, and
-- ***
+- `Type` hinting using `Pylance`, and
+- `uv` package management including use of `ruff` for linting and formatting
 
 ## Tech Stack
 
@@ -138,7 +137,7 @@ I would like to extend my gratitude to all the individuals and organizations who
 
 Specifically, I would like to acknowledge:
 
-As this work was a project for the Google `Machine Learning Crash Course`: [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression), a shout out to the folks at Google.
+- As this work was a project for the Google `Machine Learning Crash Course`: [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression), a shout out to the folks at Google.
 
 - [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derived my README.md.
 

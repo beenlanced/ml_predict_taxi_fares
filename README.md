@@ -22,7 +22,7 @@ The project:
 - Loads and inspects the taxi cab data
 - Preprocesses/cleans the data
 - Performs exploratory data analysis
-- Creates a machine learning network to build the prediction model
+- Creates a Deep Learning Keras built neural network to build the prediction model
 - Conducts analysis of the predictive model results
 - Makes any improvements
 - Makes the predicative model accessible via a web application
@@ -45,6 +45,7 @@ The project contains the key elements:
 - `Matplotlib` visualization of spaces,
 - `Numpy` for arrays and numerical operations,
 - `Pandas` for dataframe usage,
+- `Plotly` for visualization,
 - `Python` the standard modules,
 - `Pydantic` to define structure of incoming request body and validate input data,
 - `Scikit-Learn` to get training and test datasets,
@@ -68,6 +69,7 @@ The project contains the key elements:
 ![Matplotlib](https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff)
 ![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=fff)
+![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
@@ -205,7 +207,7 @@ I would like to extend my gratitude to all the individuals and organizations who
 
 Specifically, I would like to acknowledge:
 
-As this work was a project for the [LinkedIn Learning course: Deep Learning and Generative AI with Python: Data Processing and Analytics](https://www.linkedin.com/learning/deep-learning-and-generative-ai-data-prep-analysis-and-visualization-with-python), a shout out to the folks at LinkedIn Learning.
+As this work was a project for the Google `Machine Learning Crash Course`: [Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression), a shout out to the folks at Google.
 
 - [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derived my README.md.
 
